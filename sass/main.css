@@ -1,0 +1,164 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: peru;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerListaTurnos {
+  background-color: #1e90ff;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.3vh solid darkslategrey;
+}
+.headerListaTurnos__img {
+  width: 40%;
+  height: auto;
+}
+
+.seleccionFecha {
+  width: 100%;
+  height: auto;
+  font-size: 27px;
+  font-family: cursive;
+  font-weight: 600;
+  text-align: center;
+}
+
+.divSelectFechas {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divSelectFechas__selectFechas {
+  background-color: wheat;
+  width: 60%;
+  height: 35px;
+  font-size: 22px;
+  text-align: center;
+  color: black;
+  border: 0.3vh solid black;
+  border-radius: 0.7vh;
+}
+.divSelectFechas__selectFechas__options {
+  background-color: lightblue;
+  color: black;
+}
+
+.divRegistroTurnos {
+  width: 100%;
+  height: auto;
+  padding: 1vh 0vh 1vh 0vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divRegistroTurnos__tablaTurnos {
+  width: 85%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 35px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+  border: 0.3vh solid black;
+  border-radius: 0.3vh;
+  color: wheat;
+}
+.divRegistroTurnos__tablaTurnos__hora {
+  border-bottom: 0.3vh solid black;
+  border-right: 0.3vh solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 22px;
+}
+.divRegistroTurnos__tablaTurnos__clientes {
+  border-bottom: 0.3vh solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 22px;
+}
+.divRegistroTurnos__tablaTurnos__bordeHorarios {
+  border-bottom: 0.3vh solid black;
+  border-right: 0.3vh solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 14px;
+}
+.divRegistroTurnos__tablaTurnos__bordeClientes {
+  border-bottom: 0.3vh solid black;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-family: cursive;
+  font-size: 15px;
+}
+.divRegistroTurnos__tablaTurnos__bordeClientes__input {
+  background-color: peru;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  text-align: center;
+}
+.divRegistroTurnos__tablaTurnos__bordeClientes__btnSave {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divRegistroTurnos__tablaTurnos__bordeClientes__btnSave__prop {
+  width: 47%;
+  height: auto;
+  border: 0.3vh solid black;
+  border-radius: 0.7vh;
+}
+.divRegistroTurnos__tablaTurnos__bordeUltimoHorario {
+  border-right: 0.3vh solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 14px;
+}
+.divRegistroTurnos__tablaTurnos__bordeUltimoCliente {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-family: cursive;
+  font-size: 15px;
+}
+.divRegistroTurnos__tablaTurnos__bordeUltimoCliente__input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  text-align: center;
+}
+.divRegistroTurnos__tablaTurnos__bordeUltimoCliente__btnSave {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divRegistroTurnos__tablaTurnos__bordeUltimoCliente__btnSave__prop {
+  width: 47%;
+  height: auto;
+  border: 0.3vh solid black;
+  border-radius: 0.7vh;
+}/*# sourceMappingURL=main.css.map */
