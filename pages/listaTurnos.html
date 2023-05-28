@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../sass/main.css">
     <title>Turnos</title>
 </head>
@@ -17,18 +20,458 @@
         <span>- Seleccione la fecha -</span>
     </div>
 
-    <div class="divSelectFechas">
+    <div class="divSelectAños">
 
-        <select name="fechas" id="selectFechas" class="divSelectFechas__selectFechas">
-            <option value="fechas" class="divSelectFechas__selectFechas__options">Fechas</option>
-            <option value="24-05-2023" class="divSelectFechas__selectFechas__options">24-05-2023</option>
-            <option value="25-05-2023" class="divSelectFechas__selectFechas__options">25-05-2023</option>
-            <option value="26-05-2023" class="divSelectFechas__selectFechas__options">26-05-2023</option>
-            <option value="27-05-2023" class="divSelectFechas__selectFechas__options">27-05-2023</option>
-            <option value="28-05-2023" class="divSelectFechas__selectFechas__options">28-05-2023</option>
-            <option value="29-05-2023" class="divSelectFechas__selectFechas__options">29-05-2023</option>
-            <option value="30-05-2023" class="divSelectFechas__selectFechas__options">30-05-2023</option>
-            <option value="31-05-2023" class="divSelectFechas__selectFechas__options">31-05-2023</option>
+        <select name="año" id="selectAño" class="divSelectMeses__selectFechas">
+            <option value="año" class="divSelectMeses__selectFechas__options">Año</option>
+            <option value="2023" class="divSelectMeses__selectFechas__options">2023</option>
+            <option value="2024" class="divSelectMeses__selectFechas__options">2024</option>
+            <option value="2025" class="divSelectMeses__selectFechas__options">2025</option>
+            <option value="2026" class="divSelectMeses__selectFechas__options">2026</option>
+            <option value="2027" class="divSelectMeses__selectFechas__options">2027</option>
+            <option value="2028" class="divSelectMeses__selectFechas__options">2028</option>
+            <option value="2029" class="divSelectMeses__selectFechas__options">2029</option>
+            <option value="2030" class="divSelectMeses__selectFechas__options">2030</option>
+        </select>
+
+    </div>
+
+    <div class="divSelectMeses">
+
+        <select name="meses" id="selectMeses" class="divSelectMeses__selectFechas" onchange="mostrarDias()">
+            <option value="meses" class="divSelectMeses__selectFechas__options">Mes</option>
+            <option value="enero" class="divSelectMeses__selectFechas__options">Enero</option>
+            <option value="febrero" class="divSelectMeses__selectFechas__options">Febrero</option>
+            <option value="marzo" class="divSelectMeses__selectFechas__options">Marzo</option>
+            <option value="abril" class="divSelectMeses__selectFechas__options">Abril</option>
+            <option value="mayo" class="divSelectMeses__selectFechas__options">Mayo</option>
+            <option value="junio" class="divSelectMeses__selectFechas__options">Junio</option>
+            <option value="julio" class="divSelectMeses__selectFechas__options">Julio</option>
+            <option value="agosto" class="divSelectMeses__selectFechas__options">Agosto</option>
+            <option value="septiembre" class="divSelectMeses__selectFechas__options">Septiembre</option>
+            <option value="octubre" class="divSelectMeses__selectFechas__options">Octubre</option>
+            <option value="noviembre" class="divSelectMeses__selectFechas__options">Noviembre</option>
+            <option value="diciembre" class="divSelectMeses__selectFechas__options">Diciembre</option>
+        </select>
+
+    </div>
+
+    <div class="divSelectDias">
+
+        <select name="selectDia" id="selectDia" class="divSelectDias__1erOpcion">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+        </select>
+
+        <select name="selectDiasEne" id="selectDiasEne" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-01-2023" class="divSelectDias__prop__options">01-01-2023</option>
+            <option value="02-01-2023" class="divSelectDias__prop__options">02-01-2023</option>
+            <option value="03-01-2023" class="divSelectDias__prop__options">03-01-2023</option>
+            <option value="04-01-2023" class="divSelectDias__prop__options">04-01-2023</option>
+            <option value="05-01-2023" class="divSelectDias__prop__options">05-01-2023</option>
+            <option value="06-01-2023" class="divSelectDias__prop__options">06-01-2023</option>
+            <option value="07-01-2023" class="divSelectDias__prop__options">07-01-2023</option>
+            <option value="08-01-2023" class="divSelectDias__prop__options">08-01-2023</option>
+            <option value="09-01-2023" class="divSelectDias__prop__options">09-01-2023</option>
+            <option value="10-01-2023" class="divSelectDias__prop__options">10-01-2023</option>
+            <option value="11-01-2023" class="divSelectDias__prop__options">11-01-2023</option>
+            <option value="12-01-2023" class="divSelectDias__prop__options">12-01-2023</option>
+            <option value="13-01-2023" class="divSelectDias__prop__options">13-01-2023</option>
+            <option value="14-01-2023" class="divSelectDias__prop__options">14-01-2023</option>
+            <option value="15-01-2023" class="divSelectDias__prop__options">15-01-2023</option>
+            <option value="16-01-2023" class="divSelectDias__prop__options">16-01-2023</option>
+            <option value="17-01-2023" class="divSelectDias__prop__options">17-01-2023</option>
+            <option value="18-01-2023" class="divSelectDias__prop__options">18-01-2023</option>
+            <option value="19-01-2023" class="divSelectDias__prop__options">19-01-2023</option>
+            <option value="20-01-2023" class="divSelectDias__prop__options">20-01-2023</option>
+            <option value="21-01-2023" class="divSelectDias__prop__options">21-01-2023</option>
+            <option value="22-01-2023" class="divSelectDias__prop__options">22-01-2023</option>
+            <option value="23-01-2023" class="divSelectDias__prop__options">23-01-2023</option>
+            <option value="24-01-2023" class="divSelectDias__prop__options">24-01-2023</option>
+            <option value="25-01-2023" class="divSelectDias__prop__options">25-01-2023</option>
+            <option value="26-01-2023" class="divSelectDias__prop__options">26-01-2023</option>
+            <option value="27-01-2023" class="divSelectDias__prop__options">27-01-2023</option>
+            <option value="28-01-2023" class="divSelectDias__prop__options">28-01-2023</option>
+            <option value="29-01-2023" class="divSelectDias__prop__options">29-01-2023</option>
+            <option value="30-01-2023" class="divSelectDias__prop__options">30-01-2023</option>
+            <option value="31-01-2023" class="divSelectDias__prop__options">31-01-2023</option>
+        </select>
+
+        <select name="selectDiasFeb" id="selectDiasFeb" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-02-2023" class="divSelectDias__prop__options">01-02-2023</option>
+            <option value="02-02-2023" class="divSelectDias__prop__options">02-02-2023</option>
+            <option value="03-02-2023" class="divSelectDias__prop__options">03-02-2023</option>
+            <option value="04-02-2023" class="divSelectDias__prop__options">04-02-2023</option>
+            <option value="05-02-2023" class="divSelectDias__prop__options">05-02-2023</option>
+            <option value="06-02-2023" class="divSelectDias__prop__options">06-02-2023</option>
+            <option value="07-02-2023" class="divSelectDias__prop__options">07-02-2023</option>
+            <option value="08-02-2023" class="divSelectDias__prop__options">08-02-2023</option>
+            <option value="09-02-2023" class="divSelectDias__prop__options">09-02-2023</option>
+            <option value="10-02-2023" class="divSelectDias__prop__options">10-02-2023</option>
+            <option value="11-02-2023" class="divSelectDias__prop__options">11-02-2023</option>
+            <option value="12-02-2023" class="divSelectDias__prop__options">12-02-2023</option>
+            <option value="13-02-2023" class="divSelectDias__prop__options">13-02-2023</option>
+            <option value="14-02-2023" class="divSelectDias__prop__options">14-02-2023</option>
+            <option value="15-02-2023" class="divSelectDias__prop__options">15-02-2023</option>
+            <option value="16-02-2023" class="divSelectDias__prop__options">16-02-2023</option>
+            <option value="17-02-2023" class="divSelectDias__prop__options">17-02-2023</option>
+            <option value="18-02-2023" class="divSelectDias__prop__options">18-02-2023</option>
+            <option value="19-02-2023" class="divSelectDias__prop__options">19-02-2023</option>
+            <option value="20-02-2023" class="divSelectDias__prop__options">20-02-2023</option>
+            <option value="21-02-2023" class="divSelectDias__prop__options">21-02-2023</option>
+            <option value="22-02-2023" class="divSelectDias__prop__options">22-02-2023</option>
+            <option value="23-02-2023" class="divSelectDias__prop__options">23-02-2023</option>
+            <option value="24-02-2023" class="divSelectDias__prop__options">24-02-2023</option>
+            <option value="25-02-2023" class="divSelectDias__prop__options">25-02-2023</option>
+            <option value="26-02-2023" class="divSelectDias__prop__options">26-02-2023</option>
+            <option value="27-02-2023" class="divSelectDias__prop__options">27-02-2023</option>
+            <option value="28-02-2023" class="divSelectDias__prop__options">28-02-2023</option>
+            <option value="29-02-2023" class="divSelectDias__prop__options">29-02-2023</option>
+        </select>
+
+        <select name="selectDiasMar" id="selectDiasMar" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-03-2023" class="divSelectDias__prop__options">01-03-2023</option>
+            <option value="02-03-2023" class="divSelectDias__prop__options">02-03-2023</option>
+            <option value="03-03-2023" class="divSelectDias__prop__options">03-03-2023</option>
+            <option value="04-03-2023" class="divSelectDias__prop__options">04-03-2023</option>
+            <option value="05-03-2023" class="divSelectDias__prop__options">05-03-2023</option>
+            <option value="06-03-2023" class="divSelectDias__prop__options">06-03-2023</option>
+            <option value="07-03-2023" class="divSelectDias__prop__options">07-03-2023</option>
+            <option value="08-03-2023" class="divSelectDias__prop__options">08-03-2023</option>
+            <option value="09-03-2023" class="divSelectDias__prop__options">09-03-2023</option>
+            <option value="10-03-2023" class="divSelectDias__prop__options">10-03-2023</option>
+            <option value="11-03-2023" class="divSelectDias__prop__options">11-03-2023</option>
+            <option value="12-03-2023" class="divSelectDias__prop__options">12-03-2023</option>
+            <option value="13-03-2023" class="divSelectDias__prop__options">13-03-2023</option>
+            <option value="14-03-2023" class="divSelectDias__prop__options">14-03-2023</option>
+            <option value="15-03-2023" class="divSelectDias__prop__options">15-03-2023</option>
+            <option value="16-03-2023" class="divSelectDias__prop__options">16-03-2023</option>
+            <option value="17-03-2023" class="divSelectDias__prop__options">17-03-2023</option>
+            <option value="18-03-2023" class="divSelectDias__prop__options">18-03-2023</option>
+            <option value="19-03-2023" class="divSelectDias__prop__options">19-03-2023</option>
+            <option value="20-03-2023" class="divSelectDias__prop__options">20-03-2023</option>
+            <option value="21-03-2023" class="divSelectDias__prop__options">21-03-2023</option>
+            <option value="22-03-2023" class="divSelectDias__prop__options">22-03-2023</option>
+            <option value="23-03-2023" class="divSelectDias__prop__options">23-03-2023</option>
+            <option value="24-03-2023" class="divSelectDias__prop__options">24-03-2023</option>
+            <option value="25-03-2023" class="divSelectDias__prop__options">25-03-2023</option>
+            <option value="26-03-2023" class="divSelectDias__prop__options">26-03-2023</option>
+            <option value="27-03-2023" class="divSelectDias__prop__options">27-03-2023</option>
+            <option value="28-03-2023" class="divSelectDias__prop__options">28-03-2023</option>
+            <option value="29-03-2023" class="divSelectDias__prop__options">29-03-2023</option>
+        </select>
+
+        <select name="selectDiasAbr" id="selectDiasAbr" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-04-2023" class="divSelectDias__prop__options">01-04-2023</option>
+            <option value="02-04-2023" class="divSelectDias__prop__options">02-04-2023</option>
+            <option value="03-04-2023" class="divSelectDias__prop__options">03-04-2023</option>
+            <option value="04-04-2023" class="divSelectDias__prop__options">04-04-2023</option>
+            <option value="05-04-2023" class="divSelectDias__prop__options">05-04-2023</option>
+            <option value="06-04-2023" class="divSelectDias__prop__options">06-04-2023</option>
+            <option value="07-04-2023" class="divSelectDias__prop__options">07-04-2023</option>
+            <option value="08-04-2023" class="divSelectDias__prop__options">08-04-2023</option>
+            <option value="09-04-2023" class="divSelectDias__prop__options">09-04-2023</option>
+            <option value="10-04-2023" class="divSelectDias__prop__options">10-04-2023</option>
+            <option value="11-04-2023" class="divSelectDias__prop__options">11-04-2023</option>
+            <option value="12-04-2023" class="divSelectDias__prop__options">12-04-2023</option>
+            <option value="13-04-2023" class="divSelectDias__prop__options">13-04-2023</option>
+            <option value="14-04-2023" class="divSelectDias__prop__options">14-04-2023</option>
+            <option value="15-04-2023" class="divSelectDias__prop__options">15-04-2023</option>
+            <option value="16-04-2023" class="divSelectDias__prop__options">16-04-2023</option>
+            <option value="17-04-2023" class="divSelectDias__prop__options">17-04-2023</option>
+            <option value="18-04-2023" class="divSelectDias__prop__options">18-04-2023</option>
+            <option value="19-04-2023" class="divSelectDias__prop__options">19-04-2023</option>
+            <option value="20-04-2023" class="divSelectDias__prop__options">20-04-2023</option>
+            <option value="21-04-2023" class="divSelectDias__prop__options">21-04-2023</option>
+            <option value="22-04-2023" class="divSelectDias__prop__options">22-04-2023</option>
+            <option value="23-04-2023" class="divSelectDias__prop__options">23-04-2023</option>
+            <option value="24-04-2023" class="divSelectDias__prop__options">24-04-2023</option>
+            <option value="25-04-2023" class="divSelectDias__prop__options">25-04-2023</option>
+            <option value="26-04-2023" class="divSelectDias__prop__options">26-04-2023</option>
+            <option value="27-04-2023" class="divSelectDias__prop__options">27-04-2023</option>
+            <option value="28-04-2023" class="divSelectDias__prop__options">28-04-2023</option>
+            <option value="29-04-2023" class="divSelectDias__prop__options">29-04-2023</option>
+            <option value="30-04-2023" class="divSelectDias__prop__options">30-04-2023</option>
+        </select>
+
+        <select name="selectDiasMay" id="selectDiasMay" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-05-2023" class="divSelectDias__prop__options">01-05-2023</option>
+            <option value="02-05-2023" class="divSelectDias__prop__options">02-05-2023</option>
+            <option value="03-05-2023" class="divSelectDias__prop__options">03-05-2023</option>
+            <option value="04-05-2023" class="divSelectDias__prop__options">04-05-2023</option>
+            <option value="05-05-2023" class="divSelectDias__prop__options">05-05-2023</option>
+            <option value="06-05-2023" class="divSelectDias__prop__options">06-05-2023</option>
+            <option value="07-05-2023" class="divSelectDias__prop__options">07-05-2023</option>
+            <option value="08-05-2023" class="divSelectDias__prop__options">08-05-2023</option>
+            <option value="09-05-2023" class="divSelectDias__prop__options">09-05-2023</option>
+            <option value="10-05-2023" class="divSelectDias__prop__options">10-05-2023</option>
+            <option value="11-05-2023" class="divSelectDias__prop__options">11-05-2023</option>
+            <option value="12-05-2023" class="divSelectDias__prop__options">12-05-2023</option>
+            <option value="13-05-2023" class="divSelectDias__prop__options">13-05-2023</option>
+            <option value="14-05-2023" class="divSelectDias__prop__options">14-05-2023</option>
+            <option value="15-05-2023" class="divSelectDias__prop__options">15-05-2023</option>
+            <option value="16-05-2023" class="divSelectDias__prop__options">16-05-2023</option>
+            <option value="17-05-2023" class="divSelectDias__prop__options">17-05-2023</option>
+            <option value="18-05-2023" class="divSelectDias__prop__options">18-05-2023</option>
+            <option value="19-05-2023" class="divSelectDias__prop__options">19-05-2023</option>
+            <option value="20-05-2023" class="divSelectDias__prop__options">20-05-2023</option>
+            <option value="21-05-2023" class="divSelectDias__prop__options">21-05-2023</option>
+            <option value="22-05-2023" class="divSelectDias__prop__options">22-05-2023</option>
+            <option value="23-05-2023" class="divSelectDias__prop__options">23-05-2023</option>
+            <option value="24-05-2023" class="divSelectDias__prop__options">24-05-2023</option>
+            <option value="25-05-2023" class="divSelectDias__prop__options">25-05-2023</option>
+            <option value="26-05-2023" class="divSelectDias__prop__options">26-05-2023</option>
+            <option value="27-05-2023" class="divSelectDias__prop__options">27-05-2023</option>
+            <option value="28-05-2023" class="divSelectDias__prop__options">28-05-2023</option>
+            <option value="29-05-2023" class="divSelectDias__prop__options">29-05-2023</option>
+            <option value="30-05-2023" class="divSelectDias__prop__options">30-05-2023</option>
+            <option value="31-05-2023" class="divSelectDias__prop__options">31-05-2023</option>
+        </select>
+
+        <select name="selectDiasJun" id="selectDiasJun" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-06-2023" class="divSelectDias__prop__options">01-06-2023</option>
+            <option value="02-06-2023" class="divSelectDias__prop__options">02-06-2023</option>
+            <option value="03-06-2023" class="divSelectDias__prop__options">03-06-2023</option>
+            <option value="04-06-2023" class="divSelectDias__prop__options">04-06-2023</option>
+            <option value="05-06-2023" class="divSelectDias__prop__options">05-06-2023</option>
+            <option value="06-06-2023" class="divSelectDias__prop__options">06-06-2023</option>
+            <option value="07-06-2023" class="divSelectDias__prop__options">07-06-2023</option>
+            <option value="08-06-2023" class="divSelectDias__prop__options">08-06-2023</option>
+            <option value="09-06-2023" class="divSelectDias__prop__options">09-06-2023</option>
+            <option value="10-06-2023" class="divSelectDias__prop__options">10-06-2023</option>
+            <option value="11-06-2023" class="divSelectDias__prop__options">11-06-2023</option>
+            <option value="12-06-2023" class="divSelectDias__prop__options">12-06-2023</option>
+            <option value="13-06-2023" class="divSelectDias__prop__options">13-06-2023</option>
+            <option value="14-06-2023" class="divSelectDias__prop__options">14-06-2023</option>
+            <option value="15-06-2023" class="divSelectDias__prop__options">15-06-2023</option>
+            <option value="16-06-2023" class="divSelectDias__prop__options">16-06-2023</option>
+            <option value="17-06-2023" class="divSelectDias__prop__options">17-06-2023</option>
+            <option value="18-06-2023" class="divSelectDias__prop__options">18-06-2023</option>
+            <option value="19-06-2023" class="divSelectDias__prop__options">19-06-2023</option>
+            <option value="20-06-2023" class="divSelectDias__prop__options">20-06-2023</option>
+            <option value="21-06-2023" class="divSelectDias__prop__options">21-06-2023</option>
+            <option value="22-06-2023" class="divSelectDias__prop__options">22-06-2023</option>
+            <option value="23-06-2023" class="divSelectDias__prop__options">23-06-2023</option>
+            <option value="24-06-2023" class="divSelectDias__prop__options">24-06-2023</option>
+            <option value="25-06-2023" class="divSelectDias__prop__options">25-06-2023</option>
+            <option value="26-06-2023" class="divSelectDias__prop__options">26-06-2023</option>
+            <option value="27-06-2023" class="divSelectDias__prop__options">27-06-2023</option>
+            <option value="28-06-2023" class="divSelectDias__prop__options">28-06-2023</option>
+            <option value="29-06-2023" class="divSelectDias__prop__options">29-06-2023</option>
+            <option value="30-06-2023" class="divSelectDias__prop__options">30-06-2023</option>
+        </select>
+
+        <select name="selectDiasJul" id="selectDiasJul" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-07-2023" class="divSelectDias__prop__options">01-07-2023</option>
+            <option value="02-07-2023" class="divSelectDias__prop__options">02-07-2023</option>
+            <option value="03-07-2023" class="divSelectDias__prop__options">03-07-2023</option>
+            <option value="04-07-2023" class="divSelectDias__prop__options">04-07-2023</option>
+            <option value="05-07-2023" class="divSelectDias__prop__options">05-07-2023</option>
+            <option value="06-07-2023" class="divSelectDias__prop__options">06-07-2023</option>
+            <option value="07-07-2023" class="divSelectDias__prop__options">07-07-2023</option>
+            <option value="08-07-2023" class="divSelectDias__prop__options">08-07-2023</option>
+            <option value="09-07-2023" class="divSelectDias__prop__options">09-07-2023</option>
+            <option value="10-07-2023" class="divSelectDias__prop__options">10-07-2023</option>
+            <option value="11-07-2023" class="divSelectDias__prop__options">11-07-2023</option>
+            <option value="12-07-2023" class="divSelectDias__prop__options">12-07-2023</option>
+            <option value="13-07-2023" class="divSelectDias__prop__options">13-07-2023</option>
+            <option value="14-07-2023" class="divSelectDias__prop__options">14-07-2023</option>
+            <option value="15-07-2023" class="divSelectDias__prop__options">15-07-2023</option>
+            <option value="16-07-2023" class="divSelectDias__prop__options">16-07-2023</option>
+            <option value="17-07-2023" class="divSelectDias__prop__options">17-07-2023</option>
+            <option value="18-07-2023" class="divSelectDias__prop__options">18-07-2023</option>
+            <option value="19-07-2023" class="divSelectDias__prop__options">19-07-2023</option>
+            <option value="20-07-2023" class="divSelectDias__prop__options">20-07-2023</option>
+            <option value="21-07-2023" class="divSelectDias__prop__options">21-07-2023</option>
+            <option value="22-07-2023" class="divSelectDias__prop__options">22-07-2023</option>
+            <option value="23-07-2023" class="divSelectDias__prop__options">23-07-2023</option>
+            <option value="24-07-2023" class="divSelectDias__prop__options">24-07-2023</option>
+            <option value="25-07-2023" class="divSelectDias__prop__options">25-07-2023</option>
+            <option value="26-07-2023" class="divSelectDias__prop__options">26-07-2023</option>
+            <option value="27-07-2023" class="divSelectDias__prop__options">27-07-2023</option>
+            <option value="28-07-2023" class="divSelectDias__prop__options">28-07-2023</option>
+            <option value="29-07-2023" class="divSelectDias__prop__options">29-07-2023</option>
+            <option value="30-07-2023" class="divSelectDias__prop__options">30-07-2023</option>
+            <option value="31-07-2023" class="divSelectDias__prop__options">31-07-2023</option>
+        </select>
+
+        <select name="selectDiasAgo" id="selectDiasAgo" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-08-2023" class="divSelectDias__prop__options">01-08-2023</option>
+            <option value="02-08-2023" class="divSelectDias__prop__options">02-08-2023</option>
+            <option value="03-08-2023" class="divSelectDias__prop__options">03-08-2023</option>
+            <option value="04-08-2023" class="divSelectDias__prop__options">04-08-2023</option>
+            <option value="05-08-2023" class="divSelectDias__prop__options">05-08-2023</option>
+            <option value="06-08-2023" class="divSelectDias__prop__options">06-08-2023</option>
+            <option value="07-08-2023" class="divSelectDias__prop__options">07-08-2023</option>
+            <option value="08-08-2023" class="divSelectDias__prop__options">08-08-2023</option>
+            <option value="09-08-2023" class="divSelectDias__prop__options">09-08-2023</option>
+            <option value="10-08-2023" class="divSelectDias__prop__options">10-08-2023</option>
+            <option value="11-08-2023" class="divSelectDias__prop__options">11-08-2023</option>
+            <option value="12-08-2023" class="divSelectDias__prop__options">12-08-2023</option>
+            <option value="13-08-2023" class="divSelectDias__prop__options">13-08-2023</option>
+            <option value="14-08-2023" class="divSelectDias__prop__options">14-08-2023</option>
+            <option value="15-08-2023" class="divSelectDias__prop__options">15-08-2023</option>
+            <option value="16-08-2023" class="divSelectDias__prop__options">16-08-2023</option>
+            <option value="17-08-2023" class="divSelectDias__prop__options">17-08-2023</option>
+            <option value="18-08-2023" class="divSelectDias__prop__options">18-08-2023</option>
+            <option value="19-08-2023" class="divSelectDias__prop__options">19-08-2023</option>
+            <option value="20-08-2023" class="divSelectDias__prop__options">20-08-2023</option>
+            <option value="21-08-2023" class="divSelectDias__prop__options">21-08-2023</option>
+            <option value="22-08-2023" class="divSelectDias__prop__options">22-08-2023</option>
+            <option value="23-08-2023" class="divSelectDias__prop__options">23-08-2023</option>
+            <option value="24-08-2023" class="divSelectDias__prop__options">24-08-2023</option>
+            <option value="25-08-2023" class="divSelectDias__prop__options">25-08-2023</option>
+            <option value="26-08-2023" class="divSelectDias__prop__options">26-08-2023</option>
+            <option value="27-08-2023" class="divSelectDias__prop__options">27-08-2023</option>
+            <option value="28-08-2023" class="divSelectDias__prop__options">28-08-2023</option>
+            <option value="29-08-2023" class="divSelectDias__prop__options">29-08-2023</option>
+            <option value="30-08-2023" class="divSelectDias__prop__options">30-08-2023</option>
+            <option value="31-08-2023" class="divSelectDias__prop__options">31-08-2023</option>
+        </select>
+
+        <select name="selectDiasSep" id="selectDiasSep" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-09-2023" class="divSelectDias__prop__options">01-09-2023</option>
+            <option value="02-09-2023" class="divSelectDias__prop__options">02-09-2023</option>
+            <option value="03-09-2023" class="divSelectDias__prop__options">03-09-2023</option>
+            <option value="04-09-2023" class="divSelectDias__prop__options">04-09-2023</option>
+            <option value="05-09-2023" class="divSelectDias__prop__options">05-09-2023</option>
+            <option value="06-09-2023" class="divSelectDias__prop__options">06-09-2023</option>
+            <option value="07-09-2023" class="divSelectDias__prop__options">07-09-2023</option>
+            <option value="08-09-2023" class="divSelectDias__prop__options">08-09-2023</option>
+            <option value="09-09-2023" class="divSelectDias__prop__options">09-09-2023</option>
+            <option value="10-09-2023" class="divSelectDias__prop__options">10-09-2023</option>
+            <option value="11-09-2023" class="divSelectDias__prop__options">11-09-2023</option>
+            <option value="12-09-2023" class="divSelectDias__prop__options">12-09-2023</option>
+            <option value="13-09-2023" class="divSelectDias__prop__options">13-09-2023</option>
+            <option value="14-09-2023" class="divSelectDias__prop__options">14-09-2023</option>
+            <option value="15-09-2023" class="divSelectDias__prop__options">15-09-2023</option>
+            <option value="16-09-2023" class="divSelectDias__prop__options">16-09-2023</option>
+            <option value="17-09-2023" class="divSelectDias__prop__options">17-09-2023</option>
+            <option value="18-09-2023" class="divSelectDias__prop__options">18-09-2023</option>
+            <option value="19-09-2023" class="divSelectDias__prop__options">19-09-2023</option>
+            <option value="20-09-2023" class="divSelectDias__prop__options">20-09-2023</option>
+            <option value="21-09-2023" class="divSelectDias__prop__options">21-09-2023</option>
+            <option value="22-09-2023" class="divSelectDias__prop__options">22-09-2023</option>
+            <option value="23-09-2023" class="divSelectDias__prop__options">23-09-2023</option>
+            <option value="24-09-2023" class="divSelectDias__prop__options">24-09-2023</option>
+            <option value="25-09-2023" class="divSelectDias__prop__options">25-09-2023</option>
+            <option value="26-09-2023" class="divSelectDias__prop__options">26-09-2023</option>
+            <option value="27-09-2023" class="divSelectDias__prop__options">27-09-2023</option>
+            <option value="28-09-2023" class="divSelectDias__prop__options">28-09-2023</option>
+            <option value="29-09-2023" class="divSelectDias__prop__options">29-09-2023</option>
+            <option value="30-09-2023" class="divSelectDias__prop__options">30-09-2023</option>
+        </select>
+
+        <select name="selectDiasOct" id="selectDiasOct" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-10-2023" class="divSelectDias__prop__options">01-10-2023</option>
+            <option value="02-10-2023" class="divSelectDias__prop__options">02-10-2023</option>
+            <option value="03-10-2023" class="divSelectDias__prop__options">03-10-2023</option>
+            <option value="04-10-2023" class="divSelectDias__prop__options">04-10-2023</option>
+            <option value="05-10-2023" class="divSelectDias__prop__options">05-10-2023</option>
+            <option value="06-10-2023" class="divSelectDias__prop__options">06-10-2023</option>
+            <option value="07-10-2023" class="divSelectDias__prop__options">07-10-2023</option>
+            <option value="08-10-2023" class="divSelectDias__prop__options">08-10-2023</option>
+            <option value="09-10-2023" class="divSelectDias__prop__options">09-10-2023</option>
+            <option value="10-10-2023" class="divSelectDias__prop__options">10-10-2023</option>
+            <option value="11-10-2023" class="divSelectDias__prop__options">11-10-2023</option>
+            <option value="12-10-2023" class="divSelectDias__prop__options">12-10-2023</option>
+            <option value="13-10-2023" class="divSelectDias__prop__options">13-10-2023</option>
+            <option value="14-10-2023" class="divSelectDias__prop__options">14-10-2023</option>
+            <option value="15-10-2023" class="divSelectDias__prop__options">15-10-2023</option>
+            <option value="16-10-2023" class="divSelectDias__prop__options">16-10-2023</option>
+            <option value="17-10-2023" class="divSelectDias__prop__options">17-10-2023</option>
+            <option value="18-10-2023" class="divSelectDias__prop__options">18-10-2023</option>
+            <option value="19-10-2023" class="divSelectDias__prop__options">19-10-2023</option>
+            <option value="20-10-2023" class="divSelectDias__prop__options">20-10-2023</option>
+            <option value="21-10-2023" class="divSelectDias__prop__options">21-10-2023</option>
+            <option value="22-10-2023" class="divSelectDias__prop__options">22-10-2023</option>
+            <option value="23-10-2023" class="divSelectDias__prop__options">23-10-2023</option>
+            <option value="24-10-2023" class="divSelectDias__prop__options">24-10-2023</option>
+            <option value="25-10-2023" class="divSelectDias__prop__options">25-10-2023</option>
+            <option value="26-10-2023" class="divSelectDias__prop__options">26-10-2023</option>
+            <option value="27-10-2023" class="divSelectDias__prop__options">27-10-2023</option>
+            <option value="28-10-2023" class="divSelectDias__prop__options">28-10-2023</option>
+            <option value="29-10-2023" class="divSelectDias__prop__options">29-10-2023</option>
+            <option value="30-10-2023" class="divSelectDias__prop__options">30-10-2023</option>
+            <option value="31-10-2023" class="divSelectDias__prop__options">31-10-2023</option>
+        </select>
+
+        <select name="selectDiasNov" id="selectDiasNov" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-11-2023" class="divSelectDias__prop__options">01-11-2023</option>
+            <option value="02-11-2023" class="divSelectDias__prop__options">02-11-2023</option>
+            <option value="03-11-2023" class="divSelectDias__prop__options">03-11-2023</option>
+            <option value="04-11-2023" class="divSelectDias__prop__options">04-11-2023</option>
+            <option value="05-11-2023" class="divSelectDias__prop__options">05-11-2023</option>
+            <option value="06-11-2023" class="divSelectDias__prop__options">06-11-2023</option>
+            <option value="07-11-2023" class="divSelectDias__prop__options">07-11-2023</option>
+            <option value="08-11-2023" class="divSelectDias__prop__options">08-11-2023</option>
+            <option value="09-11-2023" class="divSelectDias__prop__options">09-11-2023</option>
+            <option value="10-11-2023" class="divSelectDias__prop__options">10-11-2023</option>
+            <option value="11-11-2023" class="divSelectDias__prop__options">11-11-2023</option>
+            <option value="12-11-2023" class="divSelectDias__prop__options">12-11-2023</option>
+            <option value="13-11-2023" class="divSelectDias__prop__options">13-11-2023</option>
+            <option value="14-11-2023" class="divSelectDias__prop__options">14-11-2023</option>
+            <option value="15-11-2023" class="divSelectDias__prop__options">15-11-2023</option>
+            <option value="16-11-2023" class="divSelectDias__prop__options">16-11-2023</option>
+            <option value="17-11-2023" class="divSelectDias__prop__options">17-11-2023</option>
+            <option value="18-11-2023" class="divSelectDias__prop__options">18-11-2023</option>
+            <option value="19-11-2023" class="divSelectDias__prop__options">19-11-2023</option>
+            <option value="20-11-2023" class="divSelectDias__prop__options">20-11-2023</option>
+            <option value="21-11-2023" class="divSelectDias__prop__options">21-11-2023</option>
+            <option value="22-11-2023" class="divSelectDias__prop__options">22-11-2023</option>
+            <option value="23-11-2023" class="divSelectDias__prop__options">23-11-2023</option>
+            <option value="24-11-2023" class="divSelectDias__prop__options">24-11-2023</option>
+            <option value="25-11-2023" class="divSelectDias__prop__options">25-11-2023</option>
+            <option value="26-11-2023" class="divSelectDias__prop__options">26-11-2023</option>
+            <option value="27-11-2023" class="divSelectDias__prop__options">27-11-2023</option>
+            <option value="28-11-2023" class="divSelectDias__prop__options">28-11-2023</option>
+            <option value="29-11-2023" class="divSelectDias__prop__options">29-11-2023</option>
+            <option value="30-11-2023" class="divSelectDias__prop__options">30-11-2023</option>
+        </select>
+
+        <select name="selectDiasDic" id="selectDiasDic" class="divSelectDias__prop">
+            <option value="fechas" class="divSelectDias__prop__options">Dia</option>
+            <option value="01-12-2023" class="divSelectDias__prop__options">01-12-2023</option>
+            <option value="02-12-2023" class="divSelectDias__prop__options">02-12-2023</option>
+            <option value="03-12-2023" class="divSelectDias__prop__options">03-12-2023</option>
+            <option value="04-12-2023" class="divSelectDias__prop__options">04-12-2023</option>
+            <option value="05-12-2023" class="divSelectDias__prop__options">05-12-2023</option>
+            <option value="06-12-2023" class="divSelectDias__prop__options">06-12-2023</option>
+            <option value="07-12-2023" class="divSelectDias__prop__options">07-12-2023</option>
+            <option value="08-12-2023" class="divSelectDias__prop__options">08-12-2023</option>
+            <option value="09-12-2023" class="divSelectDias__prop__options">09-12-2023</option>
+            <option value="10-12-2023" class="divSelectDias__prop__options">10-12-2023</option>
+            <option value="11-12-2023" class="divSelectDias__prop__options">11-12-2023</option>
+            <option value="12-12-2023" class="divSelectDias__prop__options">12-12-2023</option>
+            <option value="13-12-2023" class="divSelectDias__prop__options">13-12-2023</option>
+            <option value="14-12-2023" class="divSelectDias__prop__options">14-12-2023</option>
+            <option value="15-12-2023" class="divSelectDias__prop__options">15-12-2023</option>
+            <option value="16-12-2023" class="divSelectDias__prop__options">16-12-2023</option>
+            <option value="17-12-2023" class="divSelectDias__prop__options">17-12-2023</option>
+            <option value="18-12-2023" class="divSelectDias__prop__options">18-12-2023</option>
+            <option value="19-12-2023" class="divSelectDias__prop__options">19-12-2023</option>
+            <option value="20-12-2023" class="divSelectDias__prop__options">20-12-2023</option>
+            <option value="21-12-2023" class="divSelectDias__prop__options">21-12-2023</option>
+            <option value="22-12-2023" class="divSelectDias__prop__options">22-12-2023</option>
+            <option value="23-12-2023" class="divSelectDias__prop__options">23-12-2023</option>
+            <option value="24-12-2023" class="divSelectDias__prop__options">24-12-2023</option>
+            <option value="25-12-2023" class="divSelectDias__prop__options">25-12-2023</option>
+            <option value="26-12-2023" class="divSelectDias__prop__options">26-12-2023</option>
+            <option value="27-12-2023" class="divSelectDias__prop__options">27-12-2023</option>
+            <option value="28-12-2023" class="divSelectDias__prop__options">28-12-2023</option>
+            <option value="29-12-2023" class="divSelectDias__prop__options">29-12-2023</option>
+            <option value="30-12-2023" class="divSelectDias__prop__options">30-12-2023</option>
+            <option value="31-12-2023" class="divSelectDias__prop__options">31-12-2023</option>
         </select>
 
     </div>
@@ -275,6 +718,6 @@
 
 
 
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

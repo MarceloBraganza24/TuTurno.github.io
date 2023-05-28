@@ -1,0 +1,198 @@
+.headerListaTurnos {
+    background-color: #1e90ff;
+    width: 100%;
+    height: 10vh;
+    @include disFC;
+    border-bottom: 0.3vh solid darkslategrey;
+    &__img {
+        width: 40%;
+        height: auto;
+    }
+}
+
+.seleccionFecha {
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 2vh 0vh 2vh 0vh;
+}
+
+.divSelectAños {
+    width: 100%;
+    height: auto;
+    @include disFC;
+    padding-bottom: 2vh;
+    &__selectFechas {
+        background-color: lightblue;
+        width: 60%;
+        height: 35px;
+        font-size: 22px;
+        text-align: center;
+        color: black;
+        border: 0.3vh solid black;
+        border-radius: 0.7vh;
+        &__options {
+            background-color: lightblue;
+            color: black;
+        }
+    }
+}
+
+.divSelectMeses {
+    width: 100%;
+    height: auto;
+    @include disFC;
+    padding-bottom: 2vh;
+    &__selectFechas {
+        background-color: lightblue;
+        width: 60%;
+        height: 35px;
+        font-size: 22px;
+        text-align: center;
+        color: black;
+        border: 0.3vh solid black;
+        border-radius: 0.7vh;
+        &__options {
+            background-color: lightblue;
+            color: black;
+        }
+    }
+}
+
+.divSelectDias {
+    width: 100%;
+    height: auto;
+    @include disFC;
+    padding-bottom: 2vh;
+    &__1erOpcion {
+        background-color: lightblue;
+        width: 60%;
+        height: 35px;
+        font-size: 22px;
+        text-align: center;
+        color: black;
+        border: 0.3vh solid black;
+        border-radius: 0.7vh;
+        &__options {
+            background-color: lightblue;
+            color: black;
+        }
+    }
+    &__prop {
+        background-color: lightblue;
+        width: 60%;
+        height: 35px;
+        font-size: 22px;
+        text-align: center;
+        color: black;
+        border: 0.3vh solid black;
+        border-radius: 0.7vh;
+        display: none;
+        &__options {
+            background-color: lightblue;
+            color: black;
+        }
+    }
+}
+
+.divRegistroTurnos {
+    width: 100%;
+    height: auto;
+    @include disFC;
+    padding-bottom: 2vh;
+    font-family: 'Roboto Mono', monospace;
+    &__tablaTurnos {
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+        border: $bordeTabla;  
+        border-radius: 0.3vh;
+        color: wheat;      
+        &__hora {
+            background-color: #1e90ff;
+            border-bottom: $bordeTabla;
+            border-right: $bordeTabla;
+            @include disFC;
+            font-size: 22px;
+            color: black;
+        }
+        &__clientes {
+            background-color: #1e90ff;
+            border-bottom: $bordeTabla;
+            @include disFC;
+            font-size: 22px;
+            color: black;
+        }
+        &__bordeHorarios {
+            border-bottom: $bordeTabla;
+            border-right: $bordeTabla;
+            @include disFC;
+            font-size: 13px;
+            color: black;
+        }
+        &__bordeClientes {
+            border-bottom: $bordeTabla;
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            font-size: 15px;
+            &__input {
+                background-color: antiquewhite;
+                width: 100%;
+                height: 100%;
+                border: 0;
+                text-align: center;
+                font-family: 'Roboto Mono', monospace;
+                font-size: 12px;
+            }
+            &__btnSave {              
+                width: 100%;
+                height: auto;
+                @include disFC;
+                &__prop {
+                    background-color: #1e90ff;
+                    width: 80%;
+                    height: auto;
+                    border: $bordeTabla;
+                    border-radius: 0.7vh;
+                }
+            }
+        }
+        &__bordeUltimoHorario {
+            border-right: $bordeTabla;
+            @include disFC;
+            font-size: 13px;
+            color: black;
+        }
+        &__bordeUltimoCliente {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            font-size: 15px;
+            color: black;
+            &__input {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                text-align: center;
+            }
+            &__btnSave {
+                width: 100%;
+                height: auto;
+                @include disFC;
+                &__prop {
+                    background-color: #1e90ff;
+                    width: 80%;
+                    height: auto;
+                    border: $bordeTabla;
+                    border-radius: 0.7vh;
+                }
+            }
+        }
+    }
+}

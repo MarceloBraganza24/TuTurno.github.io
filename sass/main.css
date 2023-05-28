@@ -1,10 +1,11 @@
+@charset "UTF-8";
 * {
   padding: 0%;
   margin: 0%;
 }
 
 body {
-  background-color: peru;
+  background-color: antiquewhite;
   width: 100%;
   height: auto;
   display: flex;
@@ -28,21 +29,23 @@ body {
 .seleccionFecha {
   width: 100%;
   height: auto;
-  font-size: 27px;
-  font-family: cursive;
+  font-family: "Roboto Mono", monospace;
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
+  padding: 2vh 0vh 2vh 0vh;
 }
 
-.divSelectFechas {
+.divSelectAños {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2vh;
 }
-.divSelectFechas__selectFechas {
-  background-color: wheat;
+.divSelectAños__selectFechas {
+  background-color: lightblue;
   width: 60%;
   height: 35px;
   font-size: 22px;
@@ -51,7 +54,68 @@ body {
   border: 0.3vh solid black;
   border-radius: 0.7vh;
 }
-.divSelectFechas__selectFechas__options {
+.divSelectAños__selectFechas__options {
+  background-color: lightblue;
+  color: black;
+}
+
+.divSelectMeses {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vh;
+}
+.divSelectMeses__selectFechas {
+  background-color: lightblue;
+  width: 60%;
+  height: 35px;
+  font-size: 22px;
+  text-align: center;
+  color: black;
+  border: 0.3vh solid black;
+  border-radius: 0.7vh;
+}
+.divSelectMeses__selectFechas__options {
+  background-color: lightblue;
+  color: black;
+}
+
+.divSelectDias {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2vh;
+}
+.divSelectDias__1erOpcion {
+  background-color: lightblue;
+  width: 60%;
+  height: 35px;
+  font-size: 22px;
+  text-align: center;
+  color: black;
+  border: 0.3vh solid black;
+  border-radius: 0.7vh;
+}
+.divSelectDias__1erOpcion__options {
+  background-color: lightblue;
+  color: black;
+}
+.divSelectDias__prop {
+  background-color: lightblue;
+  width: 60%;
+  height: 35px;
+  font-size: 22px;
+  text-align: center;
+  color: black;
+  border: 0.3vh solid black;
+  border-radius: 0.7vh;
+  display: none;
+}
+.divSelectDias__prop__options {
   background-color: lightblue;
   color: black;
 }
@@ -59,37 +123,40 @@ body {
 .divRegistroTurnos {
   width: 100%;
   height: auto;
-  padding: 1vh 0vh 1vh 0vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2vh;
+  font-family: "Roboto Mono", monospace;
 }
 .divRegistroTurnos__tablaTurnos {
-  width: 85%;
+  width: 90%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 35px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+  grid-template-rows: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
   border: 0.3vh solid black;
   border-radius: 0.3vh;
   color: wheat;
 }
 .divRegistroTurnos__tablaTurnos__hora {
+  background-color: #1e90ff;
   border-bottom: 0.3vh solid black;
   border-right: 0.3vh solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: cursive;
   font-size: 22px;
+  color: black;
 }
 .divRegistroTurnos__tablaTurnos__clientes {
+  background-color: #1e90ff;
   border-bottom: 0.3vh solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: cursive;
   font-size: 22px;
+  color: black;
 }
 .divRegistroTurnos__tablaTurnos__bordeHorarios {
   border-bottom: 0.3vh solid black;
@@ -97,23 +164,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: cursive;
-  font-size: 14px;
+  font-size: 13px;
+  color: black;
 }
 .divRegistroTurnos__tablaTurnos__bordeClientes {
   border-bottom: 0.3vh solid black;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   grid-template-rows: 1fr;
-  font-family: cursive;
   font-size: 15px;
 }
 .divRegistroTurnos__tablaTurnos__bordeClientes__input {
-  background-color: peru;
+  background-color: antiquewhite;
   width: 100%;
   height: 100%;
   border: 0;
   text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
 }
 .divRegistroTurnos__tablaTurnos__bordeClientes__btnSave {
   width: 100%;
@@ -123,7 +191,8 @@ body {
   align-items: center;
 }
 .divRegistroTurnos__tablaTurnos__bordeClientes__btnSave__prop {
-  width: 47%;
+  background-color: #1e90ff;
+  width: 80%;
   height: auto;
   border: 0.3vh solid black;
   border-radius: 0.7vh;
@@ -133,15 +202,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: cursive;
-  font-size: 14px;
+  font-size: 13px;
+  color: black;
 }
 .divRegistroTurnos__tablaTurnos__bordeUltimoCliente {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   grid-template-rows: 1fr;
-  font-family: cursive;
   font-size: 15px;
+  color: black;
 }
 .divRegistroTurnos__tablaTurnos__bordeUltimoCliente__input {
   width: 100%;
@@ -157,7 +226,8 @@ body {
   align-items: center;
 }
 .divRegistroTurnos__tablaTurnos__bordeUltimoCliente__btnSave__prop {
-  width: 47%;
+  background-color: #1e90ff;
+  width: 80%;
   height: auto;
   border: 0.3vh solid black;
   border-radius: 0.7vh;
