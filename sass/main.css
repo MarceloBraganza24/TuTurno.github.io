@@ -12,6 +12,78 @@ body {
   flex-direction: column;
 }
 
+.bodyLogin {
+  background-image: url("../img/galaxia.jpg");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+.bodyLogin__titulo {
+  background-color: antiquewhite;
+  width: 80%;
+  height: auto;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
+  padding: 2vh 2vh 2vh 2vh;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+.bodyLogin__titulo__bienvenido {
+  font-size: 20px;
+}
+.bodyLogin__divLogin {
+  background-color: antiquewhite;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 8vh 2vh 8vh 2vh;
+  border: 0.5vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyLogin__divLogin__titulo {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 25px;
+  padding: 0vh 0vh 2vh 0vh;
+}
+.bodyLogin__divLogin__label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  padding: 2vh 0vh 2vh 0vh;
+}
+.bodyLogin__divLogin__input {
+  background-color: wheat;
+  height: 30px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  border-radius: 0.5vh;
+  text-align: center;
+}
+.bodyLogin__divLogin__btn {
+  background-color: #1e90ff;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5vh solid black;
+  margin-top: 4vh;
+  text-decoration: none;
+}
+.bodyLogin__divLogin__btn__prop {
+  background-color: #1e90ff;
+  width: 100%;
+  height: 40px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .headerListaTurnos {
   background-color: #1e90ff;
   width: 100%;
@@ -135,7 +207,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-  border: 0.3vh solid black;
+  border-top: 0.3vh solid black;
+  border-right: 0.3vh solid black;
+  border-left: 0.3vh solid black;
   border-radius: 0.3vh;
   color: wheat;
 }
@@ -149,7 +223,7 @@ body {
   font-size: 22px;
   color: black;
 }
-.divRegistroTurnos__tablaTurnos__clientes {
+.divRegistroTurnos__tablaTurnos__cliente {
   background-color: #1e90ff;
   border-bottom: 0.3vh solid black;
   display: flex;
@@ -158,7 +232,8 @@ body {
   font-size: 22px;
   color: black;
 }
-.divRegistroTurnos__tablaTurnos__bordeHorarios {
+.divRegistroTurnos__tablaTurnos__horarios {
+  background-color: wheat;
   border-bottom: 0.3vh solid black;
   border-right: 0.3vh solid black;
   display: flex;
@@ -167,68 +242,45 @@ body {
   font-size: 13px;
   color: black;
 }
-.divRegistroTurnos__tablaTurnos__bordeClientes {
+.divRegistroTurnos__tablaTurnos__inputs {
+  background-color: wheat;
   border-bottom: 0.3vh solid black;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  font-size: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.5fr 1fr;
 }
-.divRegistroTurnos__tablaTurnos__bordeClientes__input {
-  background-color: antiquewhite;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  text-align: center;
+.divRegistroTurnos__tablaTurnos__inputs__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divRegistroTurnos__tablaTurnos__inputs__input__prop {
+  background-color: wheat;
+  width: 95%;
+  height: 20px;
   font-family: "Roboto Mono", monospace;
-  font-size: 12px;
-}
-.divRegistroTurnos__tablaTurnos__bordeClientes__btnSave {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.divRegistroTurnos__tablaTurnos__bordeClientes__btnSave__prop {
-  background-color: #1e90ff;
-  width: 80%;
-  height: auto;
-  border: 0.3vh solid black;
-  border-radius: 0.7vh;
-}
-.divRegistroTurnos__tablaTurnos__bordeUltimoHorario {
-  border-right: 0.3vh solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 13px;
-  color: black;
-}
-.divRegistroTurnos__tablaTurnos__bordeUltimoCliente {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  font-size: 15px;
-  color: black;
-}
-.divRegistroTurnos__tablaTurnos__bordeUltimoCliente__input {
-  width: 100%;
-  height: 100%;
-  border: 0;
   text-align: center;
+  border: none;
 }
-.divRegistroTurnos__tablaTurnos__bordeUltimoCliente__btnSave {
-  width: 100%;
-  height: auto;
+.divRegistroTurnos__tablaTurnos__inputs__btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 0.5vh;
+}
+.divRegistroTurnos__tablaTurnos__inputs__btn__prop {
+  background-color: lightsteelblue;
+  font-family: "Roboto Mono", monospace;
+  border: 0.3vh solid black;
+  padding: 0vh 2vh 0vh 2vh;
+}
+.divRegistroTurnos__tablaTurnos__turnoTarde {
+  background-color: burlywood;
+  grid-column: 1/3;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.divRegistroTurnos__tablaTurnos__bordeUltimoCliente__btnSave__prop {
-  background-color: #1e90ff;
-  width: 80%;
-  height: auto;
-  border: 0.3vh solid black;
-  border-radius: 0.7vh;
+  font-size: 20px;
+  color: black;
+  border-bottom: 0.3vh solid black;
 }/*# sourceMappingURL=main.css.map */
