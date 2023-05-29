@@ -12,6 +12,66 @@ body {
   flex-direction: column;
 }
 
+.menuDesplegable {
+  background-color: burlywood;
+  width: 80%;
+  height: 61vh;
+  border-right: 0.8vh solid black;
+  border-bottom: 0.8vh solid black;
+  border-bottom-right-radius: 1vh;
+  position: fixed;
+  z-index: 1;
+  display: none;
+}
+.menuDesplegable__img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 0vh 2vh 0vh;
+}
+.menuDesplegable__img__prop {
+  width: 55%;
+  height: auto;
+}
+.menuDesplegable__linea {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuDesplegable__linea__prop {
+  background-color: black;
+  width: 65%;
+  height: 0.3vh;
+  border-radius: 1vh;
+}
+.menuDesplegable__ul {
+  padding-top: 4vh;
+  padding-left: 2.5vh;
+  list-style: none;
+}
+.menuDesplegable__ul__li {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 23px;
+  padding-bottom: 5vh;
+  line-height: 8vh;
+}
+.menuDesplegable__cerrarMenu {
+  width: 100%;
+  height: auto;
+  text-align: end;
+}
+.menuDesplegable__cerrarMenu__prop {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 0vh 1vh 1vh 0vh;
+}
+
 .bodyLogin {
   background-image: url("../img/galaxia.jpg");
   width: 100%;
@@ -85,16 +145,44 @@ body {
 }
 
 .headerListaTurnos {
-  background-color: #1e90ff;
+  background-color: burlywood;
   width: 100%;
   height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-bottom: 0.3vh solid darkslategrey;
+  position: fixed;
+  top: 1;
+}
+.headerListaTurnos__nav {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.3vh solid darkslategrey;
 }
-.headerListaTurnos__img {
-  width: 40%;
+.headerListaTurnos__nav__logoMenu {
+  width: 45%;
+  height: 3.7vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7vh;
+}
+.headerListaTurnos__nav__logoMenu__lineaNegra {
+  background-color: black;
+  width: 100%;
+  height: 0.8vh;
+  border-radius: 0.5vh;
+}
+.headerListaTurnos__logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerListaTurnos__logo__prop {
+  width: 80%;
   height: auto;
 }
 
@@ -105,7 +193,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   text-align: center;
-  padding: 2vh 0vh 2vh 0vh;
+  padding: 12vh 0vh 2vh 0vh;
 }
 
 .divSelectAños {
@@ -117,7 +205,7 @@ body {
   padding-bottom: 2vh;
 }
 .divSelectAños__selectFechas {
-  background-color: lightblue;
+  background-color: lightsteelblue;
   width: 60%;
   height: 35px;
   font-size: 22px;
@@ -127,7 +215,7 @@ body {
   border-radius: 0.7vh;
 }
 .divSelectAños__selectFechas__options {
-  background-color: lightblue;
+  background-color: lightsteelblue;
   color: black;
 }
 
@@ -140,7 +228,7 @@ body {
   padding-bottom: 2vh;
 }
 .divSelectMeses__selectFechas {
-  background-color: lightblue;
+  background-color: lightsteelblue;
   width: 60%;
   height: 35px;
   font-size: 22px;
@@ -150,7 +238,7 @@ body {
   border-radius: 0.7vh;
 }
 .divSelectMeses__selectFechas__options {
-  background-color: lightblue;
+  background-color: lightsteelblue;
   color: black;
 }
 
@@ -163,7 +251,7 @@ body {
   padding-bottom: 2vh;
 }
 .divSelectDias__1erOpcion {
-  background-color: lightblue;
+  background-color: lightsteelblue;
   width: 60%;
   height: 35px;
   font-size: 22px;
@@ -173,11 +261,11 @@ body {
   border-radius: 0.7vh;
 }
 .divSelectDias__1erOpcion__options {
-  background-color: lightblue;
+  background-color: lightsteelblue;
   color: black;
 }
 .divSelectDias__prop {
-  background-color: lightblue;
+  background-color: lightsteelblue;
   width: 60%;
   height: 35px;
   font-size: 22px;
@@ -188,7 +276,7 @@ body {
   display: none;
 }
 .divSelectDias__prop__options {
-  background-color: lightblue;
+  background-color: lightsteelblue;
   color: black;
 }
 
@@ -206,7 +294,7 @@ body {
   height: auto;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 40px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 40px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
   border-top: 0.3vh solid black;
   border-right: 0.3vh solid black;
   border-left: 0.3vh solid black;
@@ -214,7 +302,7 @@ body {
   color: wheat;
 }
 .divRegistroTurnos__tablaTurnos__hora {
-  background-color: #1e90ff;
+  background-color: lightsteelblue;
   border-bottom: 0.3vh solid black;
   border-right: 0.3vh solid black;
   display: flex;
@@ -224,7 +312,7 @@ body {
   color: black;
 }
 .divRegistroTurnos__tablaTurnos__cliente {
-  background-color: #1e90ff;
+  background-color: lightsteelblue;
   border-bottom: 0.3vh solid black;
   display: flex;
   justify-content: center;
@@ -257,7 +345,7 @@ body {
 .divRegistroTurnos__tablaTurnos__inputs__input__prop {
   background-color: wheat;
   width: 95%;
-  height: 20px;
+  height: 22px;
   font-family: "Roboto Mono", monospace;
   text-align: center;
   border: none;
@@ -283,4 +371,106 @@ body {
   font-size: 20px;
   color: black;
   border-bottom: 0.3vh solid black;
+}
+
+.bodyClientes {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12vh;
+  gap: 2vh;
+}
+.bodyClientes__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyClientes__titulo__prop {
+  background-color: lightsteelblue;
+  width: 90%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0.5vh solid black;
+  padding: 1vh 0vh 1vh 0vh;
+  border-radius: 0.5vh;
+  text-align: center;
+}
+.bodyClientes__divListaClientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+.bodyClientes__divListaClientes__cliente {
+  width: 85%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  border-top: 0.4vh solid black;
+  border-right: 0.4vh solid black;
+  border-left: 0.4vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyClientes__divListaClientes__cliente__label {
+  background-color: burlywood;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 0.4vh solid black;
+  border-right: 0.4vh solid black;
+  padding: 1vh;
+}
+.bodyClientes__divListaClientes__cliente__inputs {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.4vh solid black;
+  padding: 1vh;
+}
+.bodyClientes__divListaClientes__cliente__inputs__prop {
+  background-color: burlywood;
+  width: 100%;
+  height: 22px;
+  font-family: "Roboto Mono", monospace;
+  border: none;
+}
+.bodyClientes__divListaClientes__cliente__btn {
+  background-color: burlywood;
+  width: 100%;
+  height: auto;
+  border-bottom: 0.4vh solid black;
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bodyClientes__divListaClientes__cliente__btn__ref {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyClientes__divListaClientes__cliente__btn__ref__prop {
+  background-color: lightsteelblue;
+  width: 80%;
+  padding: 0.5vh 0vh 0.5vh 0vh;
+  border: 0.4vh solid black;
+  border-radius: 0.5vh;
+}
+.bodyClientes__divListaClientes__cliente__btn__del {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bodyClientes__divListaClientes__cliente__btn__del__prop {
+  background-color: lightsteelblue;
+  width: 80%;
+  padding: 0.5vh 0vh 0.5vh 0vh;
+  border: 0.4vh solid black;
+  border-radius: 0.5vh;
 }/*# sourceMappingURL=main.css.map */

@@ -341,3 +341,10 @@ function mostrarDias() {
 
     }
 }
+
+let menuH = document.getElementById('menuH')
+menuH.addEventListener('click',mostrarMenuDesplegable)
+
+function mostrarMenuDesplegable() {
+    document.getElementById('menuD').style.display = 'block'
+}

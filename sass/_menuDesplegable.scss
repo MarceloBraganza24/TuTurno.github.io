@@ -1,0 +1,55 @@
+.menuDesplegable {
+    background-color: burlywood;
+    width: 80%;
+    height: 61vh;
+    border-right: 0.8vh solid black;
+    border-bottom: 0.8vh solid black;
+    border-bottom-right-radius: 1vh;  
+    position: fixed;    
+    z-index: 1;
+    display: none;
+    &__img {
+        width: 100%;
+        height: auto;
+        @include disFC;
+        padding: 2vh 0vh 2vh 0vh; 
+        &__prop {
+            width: 55%;
+            height: auto;
+        }               
+    }
+    &__linea {
+        width: 100%;
+        height: auto;
+        @include disFC;
+        &__prop {
+            background-color: black;
+            width: 65%;
+            height: 0.3vh;        
+            border-radius: 1vh;
+        }
+    }
+    &__ul {        
+        padding-top: 4vh;
+        padding-left: 2.5vh;
+        list-style: none;        
+        &__li {
+            text-decoration: none;
+            color: black;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 23px;
+            padding-bottom: 5vh;
+            line-height: 8vh;
+        }
+    }
+    &__cerrarMenu {
+        width: 100%;
+        height: auto;
+        text-align: end;
+        &__prop {
+            font-weight: bold;
+            font-size: 22px;
+            padding: 0vh 1vh 1vh 0vh;
+        }     
+    }
+}

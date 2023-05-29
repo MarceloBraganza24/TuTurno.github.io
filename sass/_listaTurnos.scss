@@ -1,12 +1,38 @@
 .headerListaTurnos {
-    background-color: #1e90ff;
+    background-color: burlywood;
     width: 100%;
     height: 10vh;
-    @include disFC;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     border-bottom: 0.3vh solid darkslategrey;
-    &__img {
-        width: 40%;
+    position: fixed;
+    top: 1;
+    &__nav {
+        width: 100%;
         height: auto;
+        @include disFC;
+        &__logoMenu {
+            width: 45%;
+            height: 3.7vh;
+            display: flex;
+            flex-direction: column;
+            gap: 0.7vh;   
+            &__lineaNegra {
+                background-color: black;
+                width: 100%;
+                height: 0.8vh;
+                border-radius: 0.5vh;
+            }
+        }
+    }
+    &__logo {
+        width: 100%;
+        height: auto;
+        @include disFC;
+        &__prop {
+            width: 80%;
+            height: auto;
+        }
     }
 }
 
@@ -17,7 +43,7 @@
     font-size: 22px;
     font-weight: 600;
     text-align: center;
-    padding: 2vh 0vh 2vh 0vh;
+    padding: 12vh 0vh 2vh 0vh;
 }
 
 .divSelectAños {
@@ -26,7 +52,7 @@
     @include disFC;
     padding-bottom: 2vh;
     &__selectFechas {
-        background-color: lightblue;
+        background-color: lightsteelblue;
         width: 60%;
         height: 35px;
         font-size: 22px;
@@ -35,7 +61,7 @@
         border: 0.3vh solid black;
         border-radius: 0.7vh;
         &__options {
-            background-color: lightblue;
+            background-color: lightsteelblue;
             color: black;
         }
     }
@@ -47,7 +73,7 @@
     @include disFC;
     padding-bottom: 2vh;
     &__selectFechas {
-        background-color: lightblue;
+        background-color: lightsteelblue;
         width: 60%;
         height: 35px;
         font-size: 22px;
@@ -56,7 +82,7 @@
         border: 0.3vh solid black;
         border-radius: 0.7vh;
         &__options {
-            background-color: lightblue;
+            background-color: lightsteelblue;
             color: black;
         }
     }
@@ -68,7 +94,7 @@
     @include disFC;
     padding-bottom: 2vh;
     &__1erOpcion {
-        background-color: lightblue;
+        background-color: lightsteelblue;
         width: 60%;
         height: 35px;
         font-size: 22px;
@@ -77,12 +103,12 @@
         border: 0.3vh solid black;
         border-radius: 0.7vh;
         &__options {
-            background-color: lightblue;
+            background-color: lightsteelblue;
             color: black;
         }
     }
     &__prop {
-        background-color: lightblue;
+        background-color: lightsteelblue;
         width: 60%;
         height: 35px;
         font-size: 22px;
@@ -92,7 +118,7 @@
         border-radius: 0.7vh;
         display: none;
         &__options {
-            background-color: lightblue;
+            background-color: lightsteelblue;
             color: black;
         }
     }
@@ -109,14 +135,14 @@
         height: auto;
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+        grid-template-rows: 50px 40px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 40px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
         border-top: $bordeTabla;  
         border-right: $bordeTabla;  
         border-left: $bordeTabla;  
         border-radius: 0.3vh;
         color: wheat;      
         &__hora {
-            background-color: #1e90ff;
+            background-color: lightsteelblue;
             border-bottom: $bordeTabla;
             border-right: $bordeTabla;
             @include disFC;
@@ -124,7 +150,7 @@
             color: black;
         }
         &__cliente {
-            background-color: #1e90ff;
+            background-color: lightsteelblue;
             border-bottom: $bordeTabla;
             @include disFC;
             font-size: 22px;
@@ -149,7 +175,7 @@
                 &__prop { 
                     background-color: wheat;
                     width: 95%;
-                    height: 20px;
+                    height: 22px;
                     font-family: 'Roboto Mono', monospace;
                     text-align: center;
                     border: none;
