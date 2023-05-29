@@ -1,6 +1,7 @@
 .bodyClientes {
+    background-color: antiquewhite;
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: 12vh;
@@ -19,10 +20,67 @@
             text-align: center;
         }
     }
+    &__buscador {
+        @include disFC;
+        &__prop {
+            background-color: lightsteelblue;
+            width: 70%;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 15px;
+            font-weight: bold;
+            border: 0.5vh solid black;
+            padding: 1vh 0vh 1vh 0vh;
+            border-radius: 0.5vh;
+            text-align: center;
+        }
+    }
+    &__btnAñadir {
+        @include disFC;
+        &__prop {
+            background-color: burlywood;
+            width: 50%;
+            height: 40px;
+            padding: 0vh 3vh 0vh 3vh;
+            border: 0.4vh solid black;
+            border-radius: 0.5vh;                
+            font-family: 'Roboto Mono', monospace;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+    &__nuevoCliente {
+        background-color: lightslategrey;
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 4vh 3vh 4vh 3vh;
+        border: 0.5vh solid black;
+        border-radius: 0.5vh;
+        display: none;
+        &__titulo {
+            @include disFC;  
+            padding-bottom: 2vh; 
+            &__prop {
+                font-family: 'Roboto Mono', monospace;
+                font-size: 19px;
+                font-weight: 600;
+            } 
+        }
+        &__bgBtnGuardar {
+            background-color: burlywood;
+        }
+    }
     &__divListaClientes {
+        background-color: wheat;
         @include disFC;
         flex-direction: column;
         gap: 2vh;
+        padding: 0vh 0vh 5vh 0vh;
         &__cliente {
             width: 85%;
             height: auto;
@@ -60,7 +118,9 @@
                 border-bottom: 0.4vh solid black;
                 grid-column: 1/3;
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;                
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 600;
                 &__ref {
                     width: 100%;
                     height: auto;
@@ -70,7 +130,9 @@
                         width: 80%;
                         padding: 0.5vh 0vh 0.5vh 0vh;
                         border: 0.4vh solid black;
-                        border-radius: 0.5vh;
+                        border-radius: 0.5vh;                
+                        font-family: 'Roboto Mono', monospace;
+                        font-weight: 600;
                     }
                 }
                 &__del {

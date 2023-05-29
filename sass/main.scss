@@ -18,8 +18,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 @import "menuDesplegable";
 @import "index";
+@import "registrarse";
 @import "listaTurnos";
 @import "clientes";
 

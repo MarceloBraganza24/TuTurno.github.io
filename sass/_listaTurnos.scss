@@ -128,14 +128,14 @@
     width: 100%;
     height: auto;
     @include disFC;
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     font-family: 'Roboto Mono', monospace;
     &__tablaTurnos {
-        width: 90%;
+        width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 50px 40px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 40px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+        grid-template-rows: 50px 40px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 40px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
         border-top: $bordeTabla;  
         border-right: $bordeTabla;  
         border-left: $bordeTabla;  
@@ -164,18 +164,31 @@
             font-size: 13px;
             color: black;
         }
-        &__inputs {
+        &__datosCliente {
             background-color: wheat;
             border-bottom: $bordeTabla;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1.5fr 1fr;
-            &__input {
-                @include disFC;
+            &__datos {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                &__nombre {
+                    width: 100%;
+                    height: auto;
+                    @include disFC;
+                }
+                &__telefono {
+                    width: 100%;
+                    height: auto;
+                    @include disFC;
+                }
                 &__prop { 
                     background-color: wheat;
                     width: 95%;
-                    height: 22px;
+                    height: 25px;
                     font-family: 'Roboto Mono', monospace;
                     text-align: center;
                     border: none;

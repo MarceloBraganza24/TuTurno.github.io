@@ -342,9 +342,19 @@ function mostrarDias() {
     }
 }
 
+
+
 let menuH = document.getElementById('menuH')
 menuH.addEventListener('click',mostrarMenuDesplegable)
 
 function mostrarMenuDesplegable() {
     document.getElementById('menuD').style.display = 'block'
 }
+
+let btnNuevoCliente = document.getElementById('btnNuevoCliente')
+btnNuevoCliente.addEventListener('click',mostrarVentanaNuevoCliente)
+
+function mostrarVentanaNuevoCliente() {
+    document.getElementById('ventanaNuevoCliente').style.display = 'flex'
+}
+

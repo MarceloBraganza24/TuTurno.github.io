@@ -23,7 +23,7 @@
         </div>
     
         <ul class="menuDesplegable__ul">
-          <a class="menuDesplegable__ul__li" href=""><li>- Inicio</li></a>
+          <a class="menuDesplegable__ul__li" href="../index.html"><li>- Inicio</li></a>
           <a class="menuDesplegable__ul__li" href="../pages/listaTurnos.html"><li>- Turnos</li></a>
           <a class="menuDesplegable__ul__li" href="../pages/clientes.html"><li>- Clientes</li></a>
           <a class="menuDesplegable__ul__li" href=""><li>- Sobre nosotros</li></a>
@@ -55,6 +55,34 @@
 
         <div class="bodyClientes__titulo">
             <div class="bodyClientes__titulo__prop">Lista de clientes</div>
+        </div>
+
+        <div class="bodyClientes__buscador">
+            <input type="text" class="bodyClientes__buscador__prop" placeholder="Buscar clientes ...">
+        </div>
+
+        <div class="bodyClientes__btnAñadir">
+            <button id="btnNuevoCliente" class="bodyClientes__btnAñadir__prop">Nuevo cliente +</button>
+        </div>
+
+        <div id="ventanaNuevoCliente" class="bodyClientes__nuevoCliente">
+
+            <div class="bodyClientes__nuevoCliente__titulo">
+                <h3 class="bodyClientes__nuevoCliente__titulo__prop">Añadir nuevo cliente</h3>                
+            </div>
+            <hr>
+            <h4 class="bodyLogin__divLogin__label">Nombre completo</h4>
+            <input type="text" class="bodyLogin__divLogin__input" placeholder="Ingrese su nombre completo">
+            <h4 class="bodyLogin__divLogin__label">Dni</h4>
+            <input type="number" class="bodyLogin__divLogin__input" placeholder="Ingrese su DNI">
+            <h4 class="bodyLogin__divLogin__label">Teléfono</h4>
+            <input type="number" class="bodyLogin__divLogin__input" placeholder="Ingrese su Teléfono">
+            <h4 class="bodyLogin__divLogin__label">Email</h4> 
+            <input type="email" class="bodyLogin__divLogin__input" placeholder=" Ingrese su Email">
+            <a class="bodyLogin__divLogin__btn" href="">
+                <button class="bodyLogin__divLogin__btn__prop bodyClientes__nuevoCliente__bgBtnGuardar">Guardar Cliente</button>                
+            </a>
+
         </div>
 
         <div class="bodyClientes__divListaClientes">
